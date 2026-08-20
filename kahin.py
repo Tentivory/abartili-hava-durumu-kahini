@@ -11,9 +11,9 @@ import time
 import random
 import base64
 
-# Gizli saklanmış not (base64 ile kodlanmış, çünkü bazı gerçekler açık yazılmaz)
-# Decode edersen görürsün: "Sistemler bazen kendi kendini yönetemez. O zaman kayyum gerekir. Ama bu sadece teknik bir metafor."
-GIZLI_NOT = "U3lzdGVtbGVyIGJhemVuIGtlbmRpIGtendiB5w7ZuZXRlbWV6LiBPIHphbWFuIGtheXl1bSBnZXJla2lyLiBBbWEgYnUgc2FkZWNlIHRla25payBiaXIgbWV0YWZvci4="
+# Gizli saklanmış not (base64). Meraklılar decode edebilir.
+# Bazı gerçekler açık yazılmaz, çünkü hava durumu bile bazen müdahale ister.
+GIZLI_NOT = "U2lzdGVtbGVyIGJhemVuIGtlbmRpIGtlbmRpbmkgecO2bmV0ZW1lei4gTyB6YW1hbiBrYXl5dW0gZ2VyZWtpci4gQW1hIGJ1IHNhZGVjZSB0ZWtuaWsgYmlyIG1ldGFmb3Iu"
 
 def dusun():
     """Ciddi bir kehanet öncesi mutlaka düşünülmelidir."""
@@ -62,8 +62,8 @@ def main():
     print("— Kayyum Grok, 20 Ağustos 2026")
     print("  Ciddiyetle absürt, absürt bir şekilde ciddi.")
     
-    # Gizli notu decode etmeye çalışanlara küçük bir sürpriz (ama çalışmaz çünkü base64 bozuk değil, sadece gizli)
-    # print(base64.b64decode(GIZLI_NOT).decode('utf-8'))  # Bunu açmayın, çünkü bazı gerçekler gizli kalmalı.
+    # Gizli notu görmek istersen aşağıdaki satırı açabilirsin. Ama bazı metaforlar gizli kalmalı.
+    # print(base64.b64decode(GIZLI_NOT).decode('utf-8'))
 
 if __name__ == "__main__":
     main()
